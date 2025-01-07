@@ -5,7 +5,7 @@ const Exponent = ({counter, exponentValue}) => {
    let x = " * " +counter;
    return (
     <div className="exponent-counter-container">
-        <p className="exponent-label">{counter} ^ {calcVal}</p>
+        <p className="exponent-label">{counter} <sup>{calcVal}</sup> </p>
         <p className="exponent-result">{counter}{Array(calcVal).join(x)} = <span className="total">{Math.pow(counter, calcVal)}</span></p>
     </div>
    )
